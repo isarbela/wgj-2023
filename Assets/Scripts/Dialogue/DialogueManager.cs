@@ -60,11 +60,10 @@ namespace Dialogue
 
         public void EnterDialogueMode(TextAsset inkJson)
         {
-            print(inkJson.text);
             _currentStory = new Story(inkJson.text);
             DialogueIsPlaying = true;
             dialoguePanel.SetActive(true);
-            ContinueStory();
+            dialogueText.text = _currentStory.currentText;
         }
 
         private void ExitDialogueMode()
