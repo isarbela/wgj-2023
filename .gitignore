@@ -27,7 +27,7 @@
 .vs/
 
 # Ideia cache directory
-.idea/
+/.idea/
 
 # Gradle cache directory
 .gradle/
