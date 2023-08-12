@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+using Dialogue;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -14,16 +13,11 @@ public class PlayerController : MonoBehaviour
 
     public float shotsInterval;
     private float _nextShotTime;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     private void Update()
     {
-        if (DialogueManager.GetInstance().dialogueIsPlaying)
+        if (DialogueManager.GetInstance().DialogueIsPlaying)
         {
             return;
         }
