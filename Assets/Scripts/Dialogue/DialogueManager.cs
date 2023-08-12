@@ -12,7 +12,7 @@ namespace Dialogue
         [SerializeField] private GameObject dialoguePanel;
         [SerializeField] private TextMeshProUGUI dialogueText;
         [SerializeField] private TextMeshProUGUI displayNameText;
-        [SerializeField] private Image portraitImage;
+        [SerializeField] private Animator portraitImage;
 
         private Story _currentStory;
     
@@ -105,7 +105,7 @@ namespace Dialogue
                         displayNameText.text = tagValue;
                         break;
                     case PortraitTag:
-                        print(tagValue);
+                        portraitImage.Play(tagValue);
                         break;
                 }
 
