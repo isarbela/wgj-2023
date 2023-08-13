@@ -33,7 +33,7 @@ public class Enemy : MonoBehaviour
                 break;
             case "Player":
                 //TODO Make the real game mechanic
-                SceneManager.LoadScene("Game");
+                SceneManager.LoadScene("RealWorld");
                 break;
         }
     }
