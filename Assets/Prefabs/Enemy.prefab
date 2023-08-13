@@ -119,7 +119,7 @@ Transform:
   - {fileID: 1033823505029234208}
   - {fileID: 1033823506458913620}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &8355226549082922508
 Animator:
@@ -216,7 +216,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 977c37b906739723aacdb33d59fcb31b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 6
+  speed: 4
   health: 1
   deathEffect: {fileID: 3330049172512784249, guid: c57889ad638734e46a76a55844e44084, type: 3}
 --- !u!1 &1033823506458913622
