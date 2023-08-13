@@ -20,7 +20,7 @@ namespace Dialogue
         private void Update()
         {
             visualCue.SetActive(_playerInRange);
-            if (Input.GetKeyDown("space") && visualCue.activeSelf) {
+            if (Input.GetKeyDown("space") && visualCue.activeSelf && Time.timeScale != 0) {
                 DialogueManager.GetInstance().EnterDialogueMode(inkJson);
                 _playerInRange = false;
             }

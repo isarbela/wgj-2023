@@ -52,7 +52,7 @@ namespace Dialogue
             }
         
             //continue to check player input
-            if (Input.GetKeyDown("space"))
+            if (Input.GetKeyDown("space") && Time.timeScale != 0)
             { 
                 ContinueStory();
             }
