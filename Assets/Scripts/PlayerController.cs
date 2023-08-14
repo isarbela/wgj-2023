@@ -62,6 +62,7 @@ public class PlayerController : MonoBehaviour
 
         Vector3 playerInput = new Vector3(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"), 0);
         transform.position += playerInput.normalized * (speed * Time.deltaTime);
+        AudioManager.instance.Play("playerStep");
         
         if ((Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow)) && !turnleft)
         {
