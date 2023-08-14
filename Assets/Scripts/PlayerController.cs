@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
     private Vector2 _screenBounds;
     public GameObject bg;
     private Vector3 _boundSize;
+    private bool turnleft = true;
 
     private void Start()
     {
@@ -61,6 +62,18 @@ public class PlayerController : MonoBehaviour
 
         Vector3 playerInput = new Vector3(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"), 0);
         transform.position += playerInput.normalized * (speed * Time.deltaTime);
+        
+        if ((Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow)) && !turnleft)
+        {
+            transform.RotateAround(transform.position, transform.up, 180f);
+            turnleft = true;
+        }
+
+        if ((Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow)) && turnleft)
+        {
+            transform.RotateAround(transform.position, transform.up, 180f);
+            turnleft = false;
+        }
 
         //Weapon movement
         Vector3 displacement = weapon.position - mainCamera.ScreenToWorldPoint(Input.mousePosition);

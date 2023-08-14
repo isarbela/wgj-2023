@@ -9,6 +9,7 @@ public class GlassTrigger : MonoBehaviour
     [SerializeField] private GameObject tooltip;
     [SerializeField] private GameObject glass;
     public static bool playerInRange;
+    public static bool firstTime = true;
 
     // Start is called before the first frame update
     void Start()

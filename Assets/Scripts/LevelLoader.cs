@@ -12,8 +12,10 @@ public class LevelLoader : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("g") && playerInRange)
-        {
+        
+        if ((Input.GetKeyDown("g") && playerInRange) || (firstTime && playerInRange))
+        { 
+            firstTime = false;
            LoadGlassWorld(SceneManager.GetActiveScene());
         }
     }

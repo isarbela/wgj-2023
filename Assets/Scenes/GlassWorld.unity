@@ -458,7 +458,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 418092373}
   m_LocalRotation: {x: -0, y: -0, z: 0.12220134, w: 0.9925054}
-  m_LocalPosition: {x: -1.93, y: -1.2, z: -0.079809755}
+  m_LocalPosition: {x: -4.4, y: -0.26, z: -0.079809755}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -764,8 +764,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 475827039}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.9, y: -0.2, z: 0.07980976}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
+  m_LocalPosition: {x: 6.899, y: -0.2, z: 0.07980976}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1129409152}
@@ -967,10 +967,10 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.065383434, y: -0.6047964}
+  m_Offset: {x: -3.1566186, y: 0.8967191}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -981,7 +981,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.6999693, y: 6.067216}
+  m_Size: {x: 1.2610149, y: 5.754401}
   m_EdgeRadius: 0
 --- !u!1 &489932318
 GameObject:
@@ -2271,7 +2271,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e59d67929d335f979a656c94d7c77fa1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: af3b0c6e383fc3831955749f47c6d779, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -8645,7 +8645,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1815276148}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.04, y: -6.3, z: -0.07980976}
+  m_LocalPosition: {x: -2.1, y: -5.56, z: -0.07980976}
   m_LocalScale: {x: 2.682103, y: 0.6729428, z: 1.2519865}
   m_ConstrainProportionsScale: 0
   m_Children: []
